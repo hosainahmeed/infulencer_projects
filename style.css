@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    --primary-color: #FFFFFF;
+    --footer-color: #0A0826;
+    --primary-accent: #0A0826;
+    --secondary-accent: #6C6C6C;
+    --btn-bg: #E02C6D;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-start {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.flex-col {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gap-10 {
+    gap: 0.625rem; /* 10px */
+}
+
+.gap-14 {
+    gap: 0.875rem; /* 14px */
+}
+
+.gap-16 {
+    gap: 1rem; /* 16px */
+}
+
+.gap-34 {
+    gap: 2.125rem; /* 34px */
+}
+
+.gap-96 {
+    gap: 6rem; /* 96px */
+}
+
+.text-16 {
+    font-size: 1rem; /* 16px */
+}
+
+.text-24 {
+    font-size: 1.5rem; /* 24px */
+}
+
+.text-28 {
+    font-size: 1.75rem; /* 28px */
+}
+
+.text-52 {
+    font-size: 3.25rem; /* 52px */
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-light {
+    font-weight: 200;
+}
+
+.font-mid {
+    font-weight: 600;
+}
+
+.capital {
+    text-transform: capitalize;
+}
+
+.text-white {
+    color: white;
+}
+
+.button-prime {
+    background-color: var(--btn-bg);
+    padding: 0.625rem 1.5rem; /* 10px 24px */
+    border-radius: 3.125rem; /* 50px */
+    border: none;
+    outline: none;
+}
+
+.mt-80 {
+    margin-top: 5rem; /* 80px */
+}
+
+.hidden {
+    display: none;
+}
+
+section {
+    margin-top: 6.25rem; /* 100px */
+}
+
+header {
+    margin: 5.4375rem auto; /* 87px */
+    max-width: 69.375rem; /* 1110px */
+}
+
+.img-hero {
+    width: 29.6875rem; /* 475px */
+    height: 29.6875rem; /* 475px */
+    background-image: url(./images/main-camera.png), url(./images/Circle\ design.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 667px) { 
+    header{
+        margin-top: 35px;
+        padding: 0px 16px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu-item{
+        display: none;
+    }
+    .buy {
+        display: block;
+    }
+    .herosection{
+        flex-direction: column-reverse;
+    }
+    .herotext-area{
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .hero-text{
+        font-size: 28px;
+        text-align: center;
+    }
+    .img-hero{
+        width: 247px;
+        height: 247px;
+    }
+
+}
+
+@media (max-width: 36rem) { 
+    header{
+        margin-top: 35px;
+        padding: 0px 16px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu-item{
+        display: none;
+    }
+    .buy {
+        display: block;
+    }
+    .herosection{
+        flex-direction: column-reverse;
+    }
+    .herotext-area{
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .hero-text{
+        font-size: 28px;
+        text-align: center;
+    }
+    .img-hero{
+        width: 247px;
+        height: 247px;
+    }
+
+}
